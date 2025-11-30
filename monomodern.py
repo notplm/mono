@@ -116,11 +116,6 @@ test_df = ibov.iloc[cut:].copy()
 if isinstance(ibov.columns, pd.MultiIndex):
     ibov.columns = ibov.columns.get_level_values(0)
 
-# Instalar se necessário: pip install ta
-import ta
-import numpy as np
-import pandas as pd
-
 def criar_features(df):
     df_feat = df.copy()
 
